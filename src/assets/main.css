@@ -1,0 +1,29 @@
+@import url("content.css");
+@import url("header.css");
+@import url("RouterNavigasi.css");
+@import url("Jumbotron.css");
+
+@font-face {
+  font-family: fontGriffy;
+  src: url(../assets/fontFamily/Griffy-Regular.ttf);
+}
+
+@font-face {
+  font-family: fontRobotoSlab;
+  src: url(../assets/fontFamily/RobotoSlab-Bold.ttf);
+}
+
+body {
+  &::-webkit-scrollbar {
+    width: 0.3vmax;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+  }
+}

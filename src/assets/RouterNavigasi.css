@@ -1,0 +1,37 @@
+#app .header .RouterLink {
+  overflow-x: auto;
+  font-family: fontGriffy;
+}
+
+#app .header .RouterLink::-webkit-scrollbar {
+  height: 0.2vmax;
+}
+
+#app .header .RouterLink::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+}
+
+#app .header .RouterLink::-webkit-scrollbar-thumb {
+  background-color: #ffc107;
+}
+
+#app .header .RouterLink a {
+  flex-shrink: 0;
+}
+
+#app .header .RouterLink h1 {
+  color: #f8f9fa;
+  font-size: 1.2vmax;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+#app .header .RouterLink h1:hover {
+  color: #ffc107;
+}
+
+@media only screen and (max-width: 768px) {
+  #app .header .RouterLink h1 {
+    font-size: 2vmax;
+  }
+}

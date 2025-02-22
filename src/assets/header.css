@@ -1,0 +1,69 @@
+/* #app .header .navbar .judul {
+  font-size: 10px;
+} */
+
+#app .header .navbar {
+  position: relative;
+  z-index: 9999;
+
+  h1 {
+    font-size: 3vmax;
+    font-family: fontRobotoSlab;
+  }
+
+  .form {
+    display: flex;
+    align-items: center;
+    column-gap: 1vmax;
+
+    input,
+    button {
+      font-family: fontRobotoSlab;
+    }
+
+    input {
+      color: #f8f9fa;
+      background-color: #212529;
+
+      &::placeholder {
+        color: #f8f9fa;
+      }
+    }
+
+    button {
+      color: #f8f9fa;
+      border: 1px solid #f8f9fa;
+      background-color: #212529;
+    }
+  }
+
+  .dropDown {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #app .header .navbar h1 {
+    font-size: 5vmax;
+  }
+
+  #app .header .navbar .dropDown {
+    display: block;
+
+    svg:hover {
+      color: #ffc107;
+    }
+  }
+
+  #app .header .navbar .form {
+    position: absolute;
+    right: 0;
+    top: -100%;
+    transition: 500ms;
+  }
+
+  /* toggle */
+  #app .header .navbar .form.toggle {
+    top: 110%;
+  }
+}
