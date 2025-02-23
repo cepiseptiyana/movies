@@ -51,11 +51,11 @@ const iconSearch = () => {
 
   <!-- ROW 2 -->
   <div class="container-fluid bg-dark p-1 d-flex gap-3 RouterLink">
-    <RouterLink to="/" class="text-decoration-none">
+    <RouterLink to="/movies" class="text-decoration-none">
       <Heading text="home" class="" />
     </RouterLink>
 
-    <RouterLink to="/Product" class="text-decoration-none">
+    <RouterLink to="/movies/Product" class="text-decoration-none">
       <Heading text="Avengers" class="" />
     </RouterLink>
 
