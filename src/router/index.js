@@ -13,6 +13,10 @@ const router = createRouter({
       path: "/Product",
       component: ProductView,
     },
+    {
+      path: "/movie/Product",
+      component: ProductView,
+    },
   ],
 });
 
