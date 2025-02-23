@@ -31,7 +31,7 @@ defineProps({
       :input_name="input_name"
       v-model="datasearch"
     />
-    <RouterLink to="/product">
+    <RouterLink to="/movies/product">
       <Button
         :vHtml="vHtml"
         :name_value="button_name"
