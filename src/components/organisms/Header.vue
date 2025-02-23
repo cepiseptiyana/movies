@@ -55,7 +55,7 @@ const iconSearch = () => {
       <Heading text="home" class="" />
     </RouterLink>
 
-    <RouterLink to="/movies/Product" class="text-decoration-none">
+    <RouterLink to="/movies/Product/" class="text-decoration-none">
       <Heading text="Avengers" class="" />
     </RouterLink>
 
