@@ -55,11 +55,11 @@ const iconSearch = () => {
   <!-- ROW 2 -->
   <div class="container-fluid bg-dark p-1 d-flex gap-3 RouterLink">
     <RouterLink to="/" class="text-decoration-none">
-      <Heading text="home" class_value="navigasi" @click="$emit('navigasi')" />
+      <Heading text="home" class_value="navigasi" />
     </RouterLink>
 
     <RouterLink to="/avengers" class="text-decoration-none">
-      <Heading text="Avengers" class="navigasi" @click="$emit('navigasi')" />
+      <Heading text="Avengers" class="navigasi" />
     </RouterLink>
 
     <RouterLink to="/fastFurious" class="text-decoration-none">

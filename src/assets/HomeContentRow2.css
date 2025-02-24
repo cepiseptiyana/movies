@@ -1,0 +1,21 @@
+#app
+  .content
+  .row
+  .col-md.column__1
+  .wrapper-card
+  .contentRow2__wrapper__card__img {
+  width: 200px;
+  flex-shrink: 0;
+
+  img {
+    cursor: grab;
+    filter: grayscale(70%) brightness(20%) blur(1.5px);
+    transition: 500ms;
+    transform: scale(-1, 1);
+
+    &:hover {
+      filter: grayscale(0%) brightness(100%) blur(0);
+      transform: scale(1, 1);
+    }
+  }
+}

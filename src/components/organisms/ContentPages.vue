@@ -19,13 +19,6 @@ defineProps({
 // Button ShowDetails
 const showDetail = async (imdbID) => {
   showDetailMovie.data = await movieDetail.getFilm(imdbID);
-  const wrapper__card__img = document.querySelectorAll(".wrapper-card .wrapper__card__img");
-
-  wrapper__card__img.forEach((element) => {
-    element.classList.add("responsive_Large");
-    element.classList.add("responsive_Medium");
-    element.classList.add("responsive_Small");
-  });
   // console.log(showDetailMovie.data);
 };
 </script>
@@ -34,7 +27,7 @@ const showDetail = async (imdbID) => {
   <div class="container p-3">
     <div class="row">
       <!-- COLUMN 1 -->
-      <div class="col-md">
+      <div class="col-md column__1">
         <div class="wrapper-card d-flex gap-1 align-items-center">
           <div class="wrapper__card__img" v-for="movie in movieHome.slice(0, 4)">
             <Image :src="movie.Poster" :alt="movie.Title" :class_value="movie.imdbID" />
