@@ -1,6 +1,10 @@
 import { reactive } from "vue";
 
-export const dataBangsat = reactive({
+export const dataSearch = reactive({
+  data: [],
+});
+
+export const movieHome = reactive({
   data: [],
 });
 

@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import { film } from "@/service/index.js";
 import { RouterLink } from "vue-router";
-import { dataBangsat } from "@/utils/index.js";
+import { dataSearch } from "@/utils/index.js";
 
 // COMPONENTS
 import Search from "../molecules/Search.vue";
@@ -14,8 +14,8 @@ const vModelSearch = ref("");
 async function dataMovie(vModelSearch) {
   try {
     let dataMovies = await film.getFilm(vModelSearch);
-    dataBangsat.data = dataMovies;
-    console.log(dataBangsat.data);
+    dataSearch.data = dataMovies;
+    console.log(dataSearch.data);
   } catch (err) {
     alert(err);
   }
