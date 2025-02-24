@@ -172,11 +172,11 @@
   /* CARD */
   #app .content .row .col-md:nth-child(1) .wrapper-card {
     .wrapper__card__img {
-      width: 50%;
+      width: 45%;
     }
 
     .wrapper__card__img.responsive_Small {
-      width: 50%;
+      width: 45%;
     }
   }
 
@@ -185,7 +185,7 @@
     .container {
       .wrapper_text {
         h1 {
-          font-size: 80%;
+          font-size: 90%;
           color: rgb(255, 255, 255);
         }
       }
@@ -193,7 +193,7 @@
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 375px) {
   /* COLUMN 2 */
   #app .content .row .col-md:nth-child(2) {
     .container {

@@ -1,7 +1,11 @@
 <script setup>
-import { showDetailMovie } from "@/utils/index.js";
+// ATOMS
 import Image from "../atoms/Image.vue";
 import Heading from "../atoms/Heading.vue";
+
+// Utils
+import { showDetailMovie } from "@/utils/index.js";
+import { movieDetail } from "@/service/index.js";
 
 // feather
 import { icons } from "feather-icons";
@@ -11,11 +15,25 @@ const eye = icons["eye"].toSvg({ color: "white" });
 defineProps({
   movieHome: Array,
 });
+
+// Button ShowDetails
+const showDetail = async (imdbID) => {
+  showDetailMovie.data = await movieDetail.getFilm(imdbID);
+  const wrapper__card__img = document.querySelectorAll(".wrapper-card .wrapper__card__img");
+
+  wrapper__card__img.forEach((element) => {
+    element.classList.add("responsive_Large");
+    element.classList.add("responsive_Medium");
+    element.classList.add("responsive_Small");
+  });
+  // console.log(showDetailMovie.data);
+};
 </script>
 
 <template>
   <div class="container p-3">
     <div class="row">
+      <!-- COLUMN 1 -->
       <div class="col-md">
         <div class="wrapper-card d-flex gap-1 align-items-center">
           <div class="wrapper__card__img" v-for="movie in movieHome.slice(0, 4)">
@@ -41,7 +59,9 @@ defineProps({
           </div>
         </div>
       </div>
-      <!-- <div class="col-md" v-if="showDetailMovie.data.length != 0">
+
+      <!-- COLUMN 2 -->
+      <div class="col-md" v-if="showDetailMovie.data.length != 0">
         <div class="container">
           <Image
             :src="showDetailMovie.data.Poster"
@@ -57,7 +77,7 @@ defineProps({
             <Heading :text="'Director : ' + showDetailMovie.data.Director" class="capitalize" />
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
 </template>
