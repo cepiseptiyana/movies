@@ -185,7 +185,21 @@
     .container {
       .wrapper_text {
         h1 {
-          font-size: 70%;
+          font-size: 80%;
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* COLUMN 2 */
+  #app .content .row .col-md:nth-child(2) {
+    .container {
+      .wrapper_text {
+        h1 {
+          font-size: 75%;
           color: rgb(255, 255, 255);
         }
       }
