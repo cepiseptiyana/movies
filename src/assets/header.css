@@ -34,6 +34,10 @@
       color: #f8f9fa;
       border: 1px solid #f8f9fa;
       background-color: #212529;
+
+      &:hover {
+        background-color: #ffc107;
+      }
     }
   }
 

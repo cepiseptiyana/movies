@@ -10,6 +10,9 @@ import Judul from "../atoms/Judul.vue";
 import Heading from "../atoms/Heading.vue";
 import IconDropDown from "../atoms/IconDropDown.vue";
 
+// EMIT
+defineEmits(["navigasi"]);
+
 const vModelSearch = ref("");
 async function dataMovie(vModelSearch) {
   try {
@@ -52,37 +55,43 @@ const iconSearch = () => {
   <!-- ROW 2 -->
   <div class="container-fluid bg-dark p-1 d-flex gap-3 RouterLink">
     <RouterLink to="/" class="text-decoration-none">
-      <Heading text="home" class="" />
+      <Heading text="home" class_value="navigasi" @click="$emit('navigasi')" />
     </RouterLink>
 
-    <RouterLink to="/" class="text-decoration-none">
-      <Heading text="Avengers" class="" />
+    <RouterLink to="/avengers" class="text-decoration-none">
+      <Heading text="Avengers" class="navigasi" @click="$emit('navigasi')" />
     </RouterLink>
 
-    <RouterLink to="/" class="text-decoration-none">
-      <Heading text="HarryPotter" class="" />
+    <RouterLink to="/fastFurious" class="text-decoration-none">
+      <Heading text="fast & Furious" class="" />
     </RouterLink>
 
-    <RouterLink to="/" class="text-decoration-none">
-      <Heading text="Fast & Foriuos 8" class="" />
+    <RouterLink to="/mickeyMouse" class="text-decoration-none">
+      <Heading text="mickeyMouse" class="" />
     </RouterLink>
-    <RouterLink to="/" class="text-decoration-none">
-      <Heading text="Fast & Foriuos 8" class="" />
+
+    <RouterLink to="/transformers" class="text-decoration-none">
+      <Heading text="transformers" class="" />
     </RouterLink>
-    <RouterLink to="/" class="text-decoration-none">
-      <Heading text="Fast & Foriuos 8" class="" />
+
+    <RouterLink to="/birdman" class="text-decoration-none">
+      <Heading text="birdman" class="" />
     </RouterLink>
-    <RouterLink to="/" class="text-decoration-none">
-      <Heading text="Fast & Foriuos 8" class="" />
+
+    <RouterLink to="/insidious" class="text-decoration-none">
+      <Heading text="insidious" class="" />
     </RouterLink>
-    <RouterLink to="/" class="text-decoration-none">
-      <Heading text="Fast & Foriuos 8" class="" />
+
+    <RouterLink to="/vampire" class="text-decoration-none">
+      <Heading text="vampire" class="" />
     </RouterLink>
-    <RouterLink to="/" class="text-decoration-none">
-      <Heading text="Fast & Foriuos 8" class="" />
+
+    <RouterLink to="/callOfDuty" class="text-decoration-none">
+      <Heading text="callOfDuty" class="" />
     </RouterLink>
-    <RouterLink to="/" class="text-decoration-none">
-      <Heading text="Fast & Foriuos 8" class="" />
+
+    <RouterLink to="/jason13th" class="text-decoration-none">
+      <Heading text="jason13th" class="" />
     </RouterLink>
   </div>
 </template>

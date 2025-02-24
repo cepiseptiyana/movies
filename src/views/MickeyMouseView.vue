@@ -8,11 +8,9 @@ import { movieHome } from "@/utils/index.js";
 import { film } from "@/service/index.js";
 
 onBeforeMount(async () => {
-  const avengers = await film.getFilm("ave");
+  const avengers = await film.getFilm("mickey mouse");
   movieHome.data = avengers;
 });
-
-// fetch("https://kunci-tts-api.vercel.app/api/").then((res) => console.log(res.json()));
 </script>
 
 <template>
