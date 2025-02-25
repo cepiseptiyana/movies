@@ -27,7 +27,7 @@ const showDetail = async (imdbID) => {
   <div class="container p-3">
     <div class="row">
       <!-- COLUMN 1 -->
-      <div class="col-md">
+      <div class="col-md column__1">
         <div class="wrapper-card d-flex gap-1 align-items-center">
           <div class="wrapper__card__img" v-for="movie in dataSearch.slice(0, 4)">
             <Image :src="movie.Poster" :alt="movie.Title" :class_value="movie.imdbID" />
