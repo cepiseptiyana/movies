@@ -58,39 +58,39 @@ const iconSearch = () => {
       <Heading text="home" class_value="navigasi" />
     </RouterLink>
 
-    <RouterLink to="/avengers" class="text-decoration-none">
+    <RouterLink to="/moviesNav/avengers" class="text-decoration-none">
       <Heading text="Avengers" class="navigasi" />
     </RouterLink>
 
-    <RouterLink to="/fastFurious" class="text-decoration-none">
+    <RouterLink to="/moviesNav/fast and furious" class="text-decoration-none">
       <Heading text="fast & Furious" class="" />
     </RouterLink>
 
-    <RouterLink to="/mickeyMouse" class="text-decoration-none">
+    <RouterLink to="/moviesNav/mickey mouse" class="text-decoration-none">
       <Heading text="mickeyMouse" class="" />
     </RouterLink>
 
-    <RouterLink to="/transformers" class="text-decoration-none">
+    <RouterLink to="/moviesNav/transformers" class="text-decoration-none">
       <Heading text="transformers" class="" />
     </RouterLink>
 
-    <RouterLink to="/birdman" class="text-decoration-none">
+    <RouterLink to="/moviesNav/birdman" class="text-decoration-none">
       <Heading text="birdman" class="" />
     </RouterLink>
 
-    <RouterLink to="/insidious" class="text-decoration-none">
+    <RouterLink to="/moviesNav/insidious" class="text-decoration-none">
       <Heading text="insidious" class="" />
     </RouterLink>
 
-    <RouterLink to="/vampire" class="text-decoration-none">
+    <RouterLink to="/moviesNav/vampire" class="text-decoration-none">
       <Heading text="vampire" class="" />
     </RouterLink>
 
-    <RouterLink to="/callOfDuty" class="text-decoration-none">
+    <RouterLink to="/moviesNav/call of duty" class="text-decoration-none">
       <Heading text="callOfDuty" class="" />
     </RouterLink>
 
-    <RouterLink to="/jason13th" class="text-decoration-none">
+    <RouterLink to="/moviesNav/jason 13th" class="text-decoration-none">
       <Heading text="jason13th" class="" />
     </RouterLink>
   </div>
